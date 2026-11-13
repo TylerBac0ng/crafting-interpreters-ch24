@@ -1,0 +1,34 @@
+// 24.4: readLine() and num() let a program read its input. This reads one
+// number per line until the input ends, skips lines that aren't numbers, and
+// prints some statistics.
+var count = 0;
+var sum = 0;
+var sumSquares = 0;
+var smallest = nil;
+var largest = nil;
+
+var line = readLine();
+while (line != nil) {
+  var n = num(line);
+  if (n == nil) {
+    print "skipping '" + line + "'";
+  } else {
+    count = count + 1;
+    sum = sum + n;
+    sumSquares = sumSquares + n * n;
+    if (smallest == nil or n < smallest) smallest = n;
+    if (largest == nil or n > largest) largest = n;
+  }
+  line = readLine();
+}
+
+if (count == 0) {
+  print "no numbers";
+} else {
+  var mean = sum / count;
+  print "count: " + str(count);
+  print "sum: " + str(sum);
+  print "mean: " + str(mean);
+  print "std dev: " + str(sqrt(sumSquares / count - mean * mean));
+  print "range: " + str(smallest) + " to " + str(largest);
+}

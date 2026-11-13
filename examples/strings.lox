@@ -1,0 +1,42 @@
+// 24.4: len(), substr() and str() make strings something a program can take
+// apart, not only print.
+fun reverse(s) {
+  var result = "";
+  for (var i = len(s) - 1; i >= 0; i = i - 1) {
+    result = result + substr(s, i, 1);
+  }
+  return result;
+}
+
+fun isPalindrome(s) {
+  return s == reverse(s);
+}
+
+fun count(s, c) {
+  var n = 0;
+  for (var i = 0; i < len(s); i = i + 1) {
+    if (substr(s, i, 1) == c) n = n + 1;
+  }
+  return n;
+}
+
+// Pads a value on the left to a width, for lining up a table.
+fun pad(value, width) {
+  var s = str(value);
+  while (len(s) < width) s = " " + s;
+  return s;
+}
+
+print reverse("stressed");
+var words = "racecar level lox kayak clox";
+var start = 0;
+for (var i = 0; i <= len(words); i = i + 1) {
+  if (i == len(words) or substr(words, i, 1) == " ") {
+    var word = substr(words, start, i - start);
+    print pad(word, 8) + (isPalindrome(word) ? " is a palindrome" : " is not");
+    start = i + 1;
+  }
+}
+print "s in mississippi: " + str(count("mississippi", "s"));
+print type(1) + " " + type("a") + " " + type(nil) + " " + type(true) + " " +
+      type(reverse) + " " + type(len);

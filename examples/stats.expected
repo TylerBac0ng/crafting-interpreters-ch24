@@ -1,0 +1,8 @@
+skipping 'fifteen'
+skipping ''
+count: 7
+sum: 106.5
+mean: 15.2143
+std dev: 13.2876
+range: -1.5 to 42
+exit 0

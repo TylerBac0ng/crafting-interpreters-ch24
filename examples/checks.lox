@@ -1,0 +1,18 @@
+// 24.3 and 24.4: error() lets Lox code report a runtime error the same way a
+// native does, with a stack trace. Here it is an assert.
+fun assertEqual(actual, expected) {
+  if (actual != expected) {
+    error("expected " + str(expected) + " but got " + str(actual));
+  }
+  print "ok: " + str(actual);
+}
+
+fun average(a, b) {
+  return a + b / 2; // Wrong: should be (a + b) / 2.
+}
+
+assertEqual(len("lox"), 3);
+assertEqual(floor(-2.5), -3);
+assertEqual(substr("clox", 1, 3), "lox");
+assertEqual(average(2, 4), 3);
+print "not reached";

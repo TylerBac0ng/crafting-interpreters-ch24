@@ -1,0 +1,7 @@
+ok: 3
+ok: -3
+ok: lox
+expected 3 but got 4
+[line 5] in assertEqual()
+[line 17] in script
+exit 70

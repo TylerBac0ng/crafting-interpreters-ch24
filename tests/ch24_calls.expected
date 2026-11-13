@@ -1,0 +1,247 @@
+-- the book's functions
+22
+stack: 0, frames: 0
+body
+nil
+stack: 0, frames: 0
+positive
+nil
+stack: 0, frames: 0
+6765
+stack: 0, frames: 0
+<fn f>
+<native fn>
+true
+stack: 0, frames: 0
+arg!
+global
+stack: 0, frames: 0
+true
+true
+stack: 0, frames: 0
+7
+nil
+stack: 0, frames: 0
+[line 1] Error at 'continue': Can't use 'continue' outside of a loop.
+stack: 0, frames: 0
+3
+stack: 0, frames: 0
+stack: 0, frames: 0
+42
+stack: 0, frames: 0
+-- the book's errors
+[line 1] Error at 'return': Can't return from top-level code.
+stack: 0, frames: 0
+Expected 2 arguments but got 1.
+[line 1] in script
+stack: 0, frames: 0
+Expected 0 arguments but got 2.
+[line 1] in script
+stack: 0, frames: 0
+Can only call functions and classes.
+[line 1] in script
+stack: 0, frames: 0
+Can only call functions and classes.
+[line 1] in script
+stack: 0, frames: 0
+Stack overflow.
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in f()
+[line 1] in script
+stack: 0, frames: 0
+Expected 0 arguments but got 2.
+[line 2] in c()
+[line 1] in b()
+[line 1] in a()
+[line 4] in script
+stack: 0, frames: 0
+[line 1] Error at 'a': Already a variable with this name in this scope.
+stack: 0, frames: 0
+[line 1] Error at '{': Expect parameter name.
+stack: 0, frames: 0
+stack: 0, frames: 0
+[line 1] Error at 'p255': Can't have more than 255 parameters.
+stack: 0, frames: 0
+Expected 0 arguments but got 255.
+[line 1] in script
+stack: 0, frames: 0
+[line 1] Error at 'nil': Can't have more than 255 arguments.
+stack: 0, frames: 0
+-- 24.1: the saved ip is right in errors and after calls
+before
+Operands must be two numbers or two strings.
+[line 3] in inner()
+[line 7] in outer()
+[line 9] in script
+stack: 0, frames: 0
+10
+stack: 0, frames: 0
+-- 22.4 with frames: the stack grows during calls
+1640
+stack: 0, frames: 0
+-- 22.3 with functions: assigning a global constant
+[line 1] Error at 'limit': Can't assign to constant 'limit'.
+stack: 0, frames: 0
+Can't assign to constant 'later'.
+[line 1] in setLater()
+[line 1] in script
+stack: 0, frames: 0
+1
+stack: 0, frames: 0
+[line 1] Error at 'later': Can't assign to constant 'later'.
+stack: 0, frames: 0
+Undefined variable 'setLater2'.
+[line 1] in script
+stack: 0, frames: 0
+[line 1] Error at 'later': Can't redeclare a constant.
+stack: 0, frames: 0
+-- 24.2: native arity
+Expected 0 arguments but got 1.
+[line 1] in script
+stack: 0, frames: 0
+Expected 1 arguments but got 0.
+[line 1] in script
+stack: 0, frames: 0
+Expected 3 arguments but got 2.
+[line 1] in script
+stack: 0, frames: 0
+Expected 1 arguments but got 2.
+[line 1] in script
+stack: 0, frames: 0
+-- 24.3: native runtime errors
+sqrt() expects a number.
+[line 1] in script
+stack: 0, frames: 0
+sqrt() expects a number that isn't negative.
+[line 1] in script
+stack: 0, frames: 0
+floor() expects a number.
+[line 1] in script
+stack: 0, frames: 0
+len() expects a string.
+[line 1] in script
+stack: 0, frames: 0
+num() expects a string.
+[line 1] in script
+stack: 0, frames: 0
+substr() expects a string.
+[line 1] in script
+stack: 0, frames: 0
+substr() expects a whole number start and length.
+[line 1] in script
+stack: 0, frames: 0
+substr() range 2 to 4 is outside a string of length 3.
+[line 1] in script
+stack: 0, frames: 0
+substr() range -1 to 0 is outside a string of length 3.
+[line 1] in script
+stack: 0, frames: 0
+1
+negative: -1
+[line 2] in check()
+[line 6] in script
+stack: 0, frames: 0
+nil
+[line 1] in script
+stack: 0, frames: 0
+-- 24.4: natives
+number
+true
+stack: 0, frames: 0
+1.41421
+0
+2
+-3
+stack: 0, frames: 0
+0
+5
+stack: 0, frames: 0
+12.5truenils
+<fn f>
+<native fn>
+-1e-06
+stack: 0, frames: 0
+43
+-3.5
+1
+nil
+nil
+nil
+nil
+nil
+nil
+stack: 0, frames: 0
+hello
+ell
+true
+stack: 0, frames: 0
+number
+string
+nil
+bool
+function
+function
+stack: 0, frames: 0
+mine
+stack: 0, frames: 0
